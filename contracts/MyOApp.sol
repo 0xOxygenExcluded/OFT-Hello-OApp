@@ -8,14 +8,13 @@ import { MessagingReceipt } from "@layerzerolabs/oapp-evm/contracts/oapp/OAppSen
 
 contract MyOApp is OApp {
     string public chainName;
+    string public data = "Nothing received yet.";
 
     constructor(address _endpoint, 
                 address _delegate, 
                 string memory _chainName) OApp(_endpoint, _delegate) Ownable(_delegate) {
         chainName = _chainName;
     }
-
-    string public data = "Nothing received yet.";
 
   
     function send(

@@ -96,6 +96,4 @@ contract MyOFTTest is TestHelperOz5 {
         assertEq(aOFT.balanceOf(userA), initialBalance - tokensToSend);
         assertEq(bOFT.balanceOf(userB), initialBalance + tokensToSend);
     }
-
-    // TODO import the rest of oft tests?
 }
